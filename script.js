@@ -21,15 +21,16 @@ select.onchange = () => {
 }
 
 button.onclick = () => {
+
     const i = select.options.selectedIndex
+
+    if(input.value === ''){
+            select.options[i].text !== input.value
+            input.style.border = '2px solid red'
+            return 
+    }
+
     select.options[i].text = input.value
     input.value = ''
+    
 }
-
-
-
-
-
-
-
-
